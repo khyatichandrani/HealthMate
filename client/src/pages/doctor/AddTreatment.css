@@ -1,0 +1,110 @@
+.add-treatment-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f6fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(55, 69, 181, 0.15);
+}
+
+/* Patient details card */
+.patient-details-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 22px 28px;
+  border: 1px solid #d1d5db; /* softer gray */
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(55, 69, 181, 0.1);
+}
+
+/* Patient info */
+.patient-info {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.patient-info h3 {
+  margin-bottom: 14px;
+  font-weight: 700;
+  color: #2c3e8f; /* Indigo-ish */
+  letter-spacing: 0.03em;
+}
+
+.patient-info p {
+  margin: 6px 0;
+  color: #555;
+}
+
+/* Patient actions container for buttons */
+.patient-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 24px;
+}
+
+/* Base button styles */
+.btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(55, 69, 181, 0.25);
+  color: white;
+  text-align: center;
+}
+
+/* Primary button consistent with appointment primary */
+.btn-primary {
+  background-color: #3745b5; /* Dark Indigo */
+  box-shadow: 0 6px 15px rgba(55, 69, 181, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: #2a3469;
+  box-shadow: 0 8px 20px rgba(42, 52, 105, 0.6);
+}
+
+/* Secondary button consistent with appointment secondary */
+.btn-secondary {
+  background-color: #718096; /* Gray-600 */
+  color: white;
+  box-shadow: 0 6px 12px rgba(113, 128, 150, 0.4);
+}
+
+.btn-secondary:hover {
+  background-color: #4a5568; /* Gray-700 */
+  box-shadow: 0 8px 16px rgba(74, 85, 104, 0.6);
+}
+
+/* Message container styling */
+.message-container {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  user-select: none;
+  font-style: italic;
+}
+
+/* Error message style consistent with appointment errors */
+.message-container.error p {
+  color: #c53030; /* red-700 */
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}

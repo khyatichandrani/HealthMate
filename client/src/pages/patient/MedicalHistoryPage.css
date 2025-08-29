@@ -1,0 +1,221 @@
+.history-container {
+  max-width: 700px;
+  margin: 38px auto 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 32px #23225916;
+  padding: 32px 25px 34px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.history-title {
+  color: #232259;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+  letter-spacing: .7px;
+}
+
+.history-desc {
+  color: #6a6a88;
+  font-size: 1.08em;
+  text-align: center;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.history-upload {
+  margin-bottom: 32px;
+}
+
+.history-list-wrapper {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .history-container {
+    border-radius: 12px;
+    padding: 15px 2vw 20px 2vw;
+  }
+  .history-title { font-size: 1.2rem; }
+}
+
+
+
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px; /* Space between cards */
+}
+
+.history-entry-card {
+  background: #f9fafd;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px #23225910;
+  padding: 18px 20px 15px 20px;
+  color: #232259;
+  margin-bottom: 0;
+  font-size: 1.07em;
+  position: relative;
+  border-left: 5px solid #71e2f3;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.download-prescription-btn {
+  width: fit-content;
+  margin-top: 10px;
+  color: #4a47b2;
+  font-weight: 600;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.02em;
+  transition: color 0.15s;
+}
+.download-prescription-btn:hover {
+  color: #ad2be8;
+  text-decoration: underline;
+}
+
+
+
+.show-upload-btn {
+  margin: 0 auto 30px auto;
+  display: block;
+  background: linear-gradient(94deg, #ad2be8 0%, #71e2f3 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 30px;
+  font-size: 1.08em;
+  cursor: pointer;
+  transition: background 0.16s, box-shadow 0.12s;
+  box-shadow: 0 2px 10px #a9abe818;
+}
+
+.show-upload-btn:hover {
+  background: linear-gradient(91deg, #71e2f3 0%, #ad2be8 100%);
+}
+
+.cancel-upload-btn {
+  margin-top: 18px;
+  background: #fff1f1;
+  color: #ad2be8;
+  border: 1.3px solid #ad2be8;
+  font-weight: 600;
+  padding: 6px 19px;
+  font-size: 0.99em;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.14s, color 0.13s;
+}
+
+.cancel-upload-btn:hover {
+  background: #ad2be8;
+  color: #fff;
+}
+
+
+
+
+/*report upload*/
+.report-upload-form {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px #23225910;
+  padding: 26px 22px 20px 22px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  gap: 17px;
+  border: 1.5px solid #eef2ff;
+}
+
+.upload-title {
+  color: #232259;
+  font-size: 1.32rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.report-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444a79;
+}
+
+.report-file-input {
+  padding: 8px 8px;
+  border-radius: 6px;
+  border: 1.2px solid #c7d2fe;
+  font-size: 0.97em;
+  background: #f5f8ff;
+  margin-bottom: 7px;
+}
+
+.report-note-input {
+  resize: vertical;
+  padding: 9px 12px;
+  border-radius: 7px;
+  border: 1.2px solid #d1d5fa;
+  font-size: 1.01em;
+  background: #f8fafd;
+  min-height: 54px;
+  font-family: inherit;
+  transition: border-color 0.14s;
+}
+
+.report-file-input:focus,
+.report-note-input:focus {
+  border-color: #ad2be8;
+  outline: none;
+  background: #fff;
+}
+
+.upload-btn {
+  margin-top: 8px;
+  background: linear-gradient(98deg, #71e2f3 0%, #ad2be8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.11em;
+  font-weight: 700;
+  padding: 11px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #ad2be810;
+  transition: background 0.16s, box-shadow 0.13s;
+}
+
+.upload-btn:disabled {
+  background: #b6b6b6;
+  cursor: not-allowed;
+  opacity: 0.68;
+}
+
+.upload-btn:not(:disabled):hover {
+  background: linear-gradient(95deg, #16c8de 0%, #7e1fae 100%);
+  box-shadow: 0 4px 18px #ad2be819;
+}
+
+@media (max-width: 600px) {
+  .report-upload-form {
+    padding: 14px 3vw;
+    max-width: 97vw;
+  }
+  .upload-title {
+    font-size: 1.05rem;
+  }
+}

@@ -1,0 +1,91 @@
+.book-appointment-container {
+  max-width: 540px;
+  margin: 38px auto 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 32px #23225916;
+  padding: 36px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-appointment-title {
+  color: #232259;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+  letter-spacing: .7px;
+}
+
+.book-appointment-desc {
+  color: #6a6a88;
+  font-size: 1.08em;
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.book-appointment-form-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .book-appointment-container {
+    padding: 19px 6vw 23px 6vw;
+    border-radius: 11px;
+  }
+  .book-appointment-title { font-size: 1.15rem; }
+  .book-appointment-desc { font-size: .98em; }
+}
+
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.appointment-form label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.appointment-form select,
+.appointment-form input,
+.appointment-form textarea {
+  width: 100%;
+  padding: 11px;
+  border-radius: 6px;
+  border: 1.3px solid #dbeafe;
+  font-size: 1.08em;
+  margin-bottom: 2px;
+  background: #f8fafd;
+  transition: border-color 0.17s;
+}
+
+.appointment-form select:focus,
+.appointment-form input:focus,
+.appointment-form textarea:focus {
+  border-color: #ad2be8;
+  outline: none;
+  background: #fff;
+}
+
+.appointment-form button {
+  background: linear-gradient(90deg,#71e2f3 0%,#ad2be8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.11em;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #ad2be817;
+  transition: background 0.15s;
+}
+.appointment-form button:hover {
+  background: linear-gradient(90deg,#2dbbcd 0%,#7e1fae 100%);
+}

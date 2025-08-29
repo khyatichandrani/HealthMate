@@ -1,0 +1,137 @@
+.my-appointments-container {
+  max-width: 700px;
+  margin: 38px auto 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 32px #23225916;
+  padding: 32px 25px 30px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-appointments-title {
+  color: #232259;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: .7px;
+}
+
+.my-appointments-list-wrapper {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .my-appointments-container {
+    border-radius: 12px;
+    padding: 17px 2vw 20px 2vw;
+  }
+  .my-appointments-title { font-size: 1.2rem; }
+}
+
+
+
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.appointment-card {
+  background: #f9fafd;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px #23225910;
+  padding: 18px 20px;
+  color: #222259;
+  font-size: 1.08em;
+  font-weight: 500;
+  border-left: 5px solid #71e2f3;
+  position: relative;
+}
+
+.appointment-card b {
+  color: #232259;
+}
+
+.appointment-card span {
+  font-weight: 700;
+}
+
+.appointment-card .status {
+  font-weight: bold;
+  padding: 3px 11px;
+  border-radius: 12px;
+  font-size: .94em;
+  margin-left: 8px;
+}
+
+.appointment-card .status.approved { background: #e8fcf1; color: #33d178; }
+.appointment-card .status.pending { background: #fffbeb; color: #d1a654; }
+.appointment-card .status.rejected { background: #fff0f3; color: #e12d33; }
+
+.appointments-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment-card {
+  background-color: #f9f9fb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.appointment-card:hover {
+  box-shadow: 0 4px 20px rgba(55, 69, 181, 0.2);
+}
+
+.appointment-card div {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.appointment-card b {
+  color: #3745b5; /* Indigo accent color */
+}
+
+.status {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.approved {
+  color: #33d178;
+}
+
+.status.pending {
+  color: #fbbf24;
+}
+
+.status.rejected {
+  color: #f43f5e;
+}
+
+/* Optional: Responsive */
+
+@media (max-width: 480px) {
+  .appointments-list {
+    padding: 10px;
+  }
+
+  .appointment-card {
+    padding: 12px 15px;
+  }
+
+  .appointment-card div {
+    font-size: 0.9rem;
+  }
+}

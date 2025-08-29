@@ -1,0 +1,89 @@
+/* Container root */
+.dashboard-root {
+  min-height: 100vh;
+  background: #f7f8fc;
+  box-sizing: border-box;
+}
+
+/* Layout wrapper */
+.dashboard-layout {
+  /* No flex needed since sidebar is fixed */
+  width: 100%;
+  /* If you want, you can add padding-top if you have a fixed header */
+}
+
+/* Sidebar - fixed position */
+.dashboard-sidebar {
+  position: fixed;
+   /* Height of your fixed header */
+  left: 0;
+  width: 210px;
+  height: 100vh; /* full viewport height minus header */
+  background: #232259;
+  color: #fff;
+  padding-top: 24px;
+  box-shadow: 2px 0 15px #23225919;
+  overflow-y: auto; /* Scroll inside sidebar if content is long */
+  box-sizing: border-box;
+  z-index: 999; /* Keep sidebar on top */
+}
+
+/* Sidebar navigation */
+.dashboard-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Nav links */
+.side-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 24px;
+  border-radius: 7px;
+  font-weight: 600;
+  transition: background 0.18s, color 0.12s;
+  font-size: 1.07em;
+  box-sizing: border-box;
+}
+
+/* Active and hover styles */
+.side-link.active,
+.side-link:hover {
+  background: linear-gradient(104deg, #71e2f3 0%, #ad2be8 100%);
+  color: #fff;
+}
+
+/* Main content with left margin to avoid sidebar overlap */
+.dashboard-main {
+  margin-left: 210px; /* same as sidebar width */
+  padding: 44px 4vw;
+  box-sizing: border-box;
+  min-height: calc(100vh - 64px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .dashboard-sidebar {
+    position: static; /* Remove fixed on small screens */
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    padding: 9px 0;
+    overflow-y: visible;
+  }
+
+  .dashboard-sidebar nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .dashboard-main {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .dashboard-layout {
+    flex-direction: column;
+  }
+}
